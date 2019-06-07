@@ -92,14 +92,6 @@ public class Calcolatrice{
                 list = new LinkedList<>();
 
             }
-/*
-            if(prova[i] ==')' && prova[i+1] != ')' ) {
-                if (prova[i+1] == '+') {
-                    //risultato += Integer.parseInt(Character.toString(nuovaPila.get(i + 1)));
-                    risultato += Integer.parseInt(Character.toString(prova[i + 2]));
-                } else if (prova[i+1] == '-')
-                    risultato -= Integer.parseInt(Character.toString(prova[i + 2]));
-            }*/
 
         }
 
@@ -115,16 +107,5 @@ public class Calcolatrice{
             }
         }
         return risultato;
-
-       // System.out.println(carattere);
-    }//se trovo una chiusa prima ci deve essere per forza un'aperta.
-    //inizio quindi a fare il pop. Quando torno la parentiesi aperta faccio comunque il pop.
-    //man mano che faccio il pop dalla pila 1 faccio il push nella 2 tranne se trovo la parentesi aperta
-    //parto poi da pila due e faccio il pop finche non è vuota. Creo una linked list e man mano che faccio il pop inserisco
-    //i dati. ciclo sulla lista  e quando trovo l'operatore faccio l'operazione. BISOGNA CONVERTIRE IN INTERI GLI ELEMENTI PRIMA
-    //PRIMA DI OPERARE.
-    //converto il risultato in un char in modo da fare  il push del risultato in pila1. continuo ad acquisire con pila1 il resto
-    //resto dell'espressione.
-    //posso ora passare al resto dell'espressione.
-
+    }
 }
